@@ -1,0 +1,15 @@
+.randomImg {
+    width: 700px;
+    height: 400px;
+    border: solid black;
+}
+
+.randomImg td {
+    border:solid black;
+    text-align: center;
+}
+
+.randomImg td img {
+    width: 100px;
+    height: 100px;
+}
