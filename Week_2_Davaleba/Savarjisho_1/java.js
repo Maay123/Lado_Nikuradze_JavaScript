@@ -41,7 +41,7 @@ function number_random(start, end, times = 1){
 
 function week(){
     var week=["Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday", "Sunday"]
-    return Math.random()*7
+    return week[Math.floor(Math.random()*7)]
 }
 
 function generateTable(numberOfTr, numberOfTd){
