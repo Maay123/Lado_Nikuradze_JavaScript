@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="java.js"></script>
+</head>
+<body>
+    <div class="style">
+        <div id=1></div>
+        <br>
+        <div class="clock" id="clock1"></div>
+    </div>
+    
+    
+    <script>
+        date = new Date();
+        document.getElementById("1").innerHTML = `  ${date.getFullYear()}/
+                                                    ${date.getMonth() + 1}/
+                                                    ${date.getDate()} : 
+                                                    ${date.getDay()} : 
+                                                    ${date.getHours()}:
+                                                    ${date.getMinutes()}:
+                                                    ${date.getSeconds()}:
+                                                    ${date.getMilliseconds()}`
+        setInterval(updateClock, 1000)    
+    </script>
+</body>
+</html>

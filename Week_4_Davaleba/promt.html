@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style{
+            width: 50%;
+            padding: 10px;
+            background-color: white;
+            border-radius: 25px;
+            margin: auto;
+            color: red;
+            font-size: 35px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="style" id="1"></div>
+    
+    <script>
+        input = prompt("შემოიტანე კვირის დღე(1, 2, 3, 4, 5, 6, 7)");
+
+        switch (input){
+            case "1":
+                result = "დღეს ორშაბათი..."
+                break;
+            case "2":
+                result = "დღეს სამშაბათი..."
+                break;
+            case "3":
+                result = "დღეს ოთხშაბათი..."
+                break
+            case "4":
+                result = "დღეს ხუთშაბათი..."
+                break
+            case "5":
+                result = "დღეს პარასკევი..."
+                break
+            case "6":
+                result = "დღეს შაბათი..."
+                break
+            case "7":
+                result = "დღეს კვირა..."
+                break
+            case null:
+                result = `
+                    <span style="color:green; font-style:italic;">თქვენ დააჭირეთ Cancel ღილაკს. გისურვებთ ბედნიერ დღეს!!!</span>
+                `  
+                break  
+            default:
+                result = "ასეთი დღე არ არსებობს!!!"         
+        }
+
+        document.getElementById("1").innerHTML = result
+    </script>
+</body>
+</html>
