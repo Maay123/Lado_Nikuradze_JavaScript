@@ -1,4 +1,4 @@
-function currentTime(){
+function currentTime1(){
     result = ``
     dateTime = new Date();
     hour = dateTime.getHours()
@@ -15,5 +15,5 @@ function currentTime(){
 }
 
 function updateClock(){
-    document.getElementById("clock1").innerHTML = currentTime();
+    document.getElementById("clock1").innerHTML = currentTime1();
 }
